@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_light">#00A7CF</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="while_light">#FAFAFA</color>
+
+    <color name="colorPrimary">#00A7CF</color>
+    <color name="colorPrimaryDark">#00ACC1</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>

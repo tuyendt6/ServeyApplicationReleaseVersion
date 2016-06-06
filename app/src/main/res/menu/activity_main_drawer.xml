@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/list_all_dealers"
+            android:title="Listar Puntos de Venta" />
+        <item
+            android:id="@+id/add_new_dealer"
+            android:title="Añadir Nuevo Punto de Venta" />
+        <item
+            android:id="@+id/start_servey"
+            android:title="Iniciar Nueva Encuesta" />
+        <item
+            android:id="@+id/sys_database"
+            android:title="Sincronizar" />
+        <item
+            android:id="@+id/general_map_view"
+            android:title="Mapa General" />
+        <item
+            android:id="@+id/report_servey"
+            android:title="Informes" />
+
+        <item
+            android:id="@+id/exit"
+            android:title="Salir" />
+    </group>
+
+</menu>

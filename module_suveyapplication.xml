@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_suveyapplication" default="compile.module.suveyapplication">
+  <dirname property="module.suveyapplication.basedir" file="${ant.file.module_suveyapplication}"/>
+  
+  <property name="module.jdk.home.suveyapplication" value="${jdk.home.1.7}"/>
+  <property name="module.jdk.bin.suveyapplication" value="${jdk.bin.1.7}"/>
+  <property name="module.jdk.classpath.suveyapplication" value="jdk.classpath.1.7"/>
+  
+  <property name="compiler.args.suveyapplication" value="-encoding UTF-8 -source 1.7 ${compiler.args}"/>
+  
+  <property name="suveyapplication.output.dir" value="${module.suveyapplication.basedir}/build/classes/production/SuveyApplication"/>
+  <property name="suveyapplication.testoutput.dir" value="${module.suveyapplication.basedir}/build/classes/test/SuveyApplication"/>
+  
+  <path id="suveyapplication.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="suveyapplication.module.production.classpath">
+    <path refid="${module.jdk.classpath.suveyapplication}"/>
+  </path>
+  
+  <path id="suveyapplication.runtime.production.module.classpath">
+    <pathelement location="${suveyapplication.output.dir}"/>
+  </path>
+  
+  <path id="suveyapplication.module.classpath">
+    <path refid="${module.jdk.classpath.suveyapplication}"/>
+    <pathelement location="${suveyapplication.output.dir}"/>
+  </path>
+  
+  <path id="suveyapplication.runtime.module.classpath">
+    <pathelement location="${suveyapplication.testoutput.dir}"/>
+    <pathelement location="${suveyapplication.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.suveyapplication">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.suveyapplication">
+    <patternset refid="excluded.from.module.suveyapplication"/>
+  </patternset>
+  
+  
+  <target name="compile.module.suveyapplication" depends="compile.module.suveyapplication.production,compile.module.suveyapplication.tests" description="Compile module SuveyApplication"/>
+  
+  <target name="compile.module.suveyapplication.production" depends="register.custom.compilers" description="Compile module SuveyApplication; production classes"/>
+  
+  <target name="compile.module.suveyapplication.tests" depends="register.custom.compilers,compile.module.suveyapplication.production" description="compile module SuveyApplication; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.suveyapplication" description="cleanup module">
+    <delete dir="${suveyapplication.output.dir}"/>
+    <delete dir="${suveyapplication.testoutput.dir}"/>
+  </target>
+</project>

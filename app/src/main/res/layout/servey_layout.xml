@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroung"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.1"
+            android:src="@drawable/pullicon"
+            android:id="@+id/imbexit" />
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:src="@drawable/addicon"
+            android:background="@color/blue_light"
+            android:layout_weight="0.1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imbaddnewservey"
+            android:layout_below="@+id/imbexit"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutsearch"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/newservey"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageButton2" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listservey"
+        android:layout_below="@+id/layoutsearch" />
+
+
+</RelativeLayout>

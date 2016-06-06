@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgroung"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="235dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/dealericon"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imbdealer" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/mapicon"
+                android:id="@+id/imbmap" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

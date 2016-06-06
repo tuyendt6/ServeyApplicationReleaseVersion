@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroung">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/imbexit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/pullicon"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imbaddnewservey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imbexit"
+            android:layout_gravity="center"
+            android:background="@color/blue_light"
+            android:src="@drawable/addicon" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_alert_sucess" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/imageButton4"
+            style="@style/button_style"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:text="nueva" />
+
+        <Button
+            android:id="@+id/imageButton3"
+            style="@style/button_style"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:text="cancelar" />
+    </LinearLayout>
+
+
+</RelativeLayout>

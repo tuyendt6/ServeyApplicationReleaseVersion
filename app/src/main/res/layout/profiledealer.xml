@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imbexit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/pullicon"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imbadddeler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imbexit"
+            android:layout_gravity="center"
+            android:background="@color/blue_light"
+            android:src="@drawable/addicon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtnameDealer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="hoc hoc nua hoc mai hoc hoc nua hoc mai hoc hoc nua hoc mai hgpc hopc hopc hco choc hoc hoc hoc jhioc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blue_light" />
+
+        <Button
+            android:id="@+id/btnstartServey"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Iniciar Nueva Encuesta"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="20dp"
+        tools:context=".ProfileDearlerActivity" />
+
+
+</RelativeLayout>
